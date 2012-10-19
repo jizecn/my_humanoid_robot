@@ -1,0 +1,7 @@
+[touchgameorder]
+Happy left_arm:poke right_arm:touch leftfoot:poke rightfoot:touch
+order1_grasp left_arm:poke right_arm:poke leftfoot:poke rightfoot:poke
+order2_poke left_arm:poke right_arm:poke leftfoot:poke rightfoot:poke
+order2_grasp left_arm:poke right_arm:poke leftfoot:poke rightfoot:poke
+order3_poke left_arm:poke right_arm:poke leftfoot:poke rightfoot:poke
+order3_grasp left_arm:poke right_arm:poke leftfoot:poke rightfoot:poke

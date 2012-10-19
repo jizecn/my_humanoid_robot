@@ -1,0 +1,129 @@
+#behaviourmode specifies the working mode, default is simplemode. options include simplemode and gamemode now. 
+behaviourmode gamemode
+
+#controlmode usermode
+#motordevice dynamixelAX12FtdiDriver
+#motordevice dynamixelAx12
+motordevice KasparServos
+motorconffile D:/roboskin/coding/KasparRoboSkinGameConf/kasparRoboSkin_laptop.cfg
+posefilepath D:/roboskin/coding/KasparRoboSkinGameConf/Kaspar1cData/pos
+seqfilepath D:/roboskin/coding/KasparRoboSkinGameConf/Kaspar1cData/seqs
+devfilepath D:/roboskin/coding/KasparRoboSkinGameConf
+soundFilePath D:/roboskin/coding/KasparRoboSkinGameConf/Kaspar1cData/sounds
+devfile Kaspar1b.dev
+devxmlfile kasparRoboSkin.xml
+keymapfile default.skm
+keymapfilepath D:/roboskin/coding/KasparRoboSkinGameConf/Kaspar1cData/seqs
+skinsensorfilepath D:/roboskin/coding/KasparRoboSkinGameConf/skin/kaspar
+
+#logdata
+#logsequence
+logfilepath D:/roboskin/coding/KasparRoboSkinGameConf/Kaspar1cData/logs
+
+gamefilepath D:/roboskin/coding/KasparRoboSkinGameConf
+
+[posefiles]
+Drum Ready.pose
+Eye Open.pose
+Eye Shut.pose
+eyes_left.pose
+eyes_right.pose
+flap.pose
+gameStart.pose
+Happy.pose
+head left.pose
+head right.pose
+Hide.pose
+hurt.pose
+LarmD.pose
+LarmDown.pose
+LarmUp.pose
+Left Arm.pose
+Left down.pose
+left head.pose
+left_up.pose
+LeftLeg.pose
+MouthClose.pose
+MouthOpen.pose
+noddown.pose
+nodup.pose
+Normal.pose
+PointBook.pose
+PointPeople.pose
+RarmDown.pose
+RarmUp.pose
+Res.pose
+Right Arm.pose
+Right down.pose
+right head.pose
+Right Leg.pose
+right_up.pose
+RightHand.pose
+Sad.pose
+sdf.pose
+Secret.pose
+torso.pose
+W1.pose
+W2.pose
+Wave1.pose
+Wave2.pose
+Wave 1.pose
+Left Leg.pose
+Right Hand.pose
+Left Hand.pose
+[seqfiles]
+eyes_left.seq
+head_left.seq
+Left Drum.seq
+hurts.seq
+LarmUP.seq
+cheecks.seq
+Right Drum.seq
+Drum Ready.seq
+flap.seq
+Blink.seq
+Hide.seq
+RarmUP.seq
+Wave.seq
+Sad.seq
+belly.seq
+head_right.seq
+Res.seq
+goodbye.seq
+nod.seq
+nod1.seq
+tickR.seq
+L_arm_up.seq
+Secret.seq
+Happy.seq
+R_arm_up.seq
+R_arm_up.seq
+L_arm_up.seq
+hurts.seq
+eyes_right.seq
+game_over.seq
+hard_poke.seq
+hard_touch.seq
+reset.seq
+light_poke.seq
+light_touch.seq
+g2p1.seq
+g2p2.seq
+g2p3.seq
+g3p1.seq
+g3p2.seq
+g3p3.seq
+g4p1.seq
+g4p2.seq
+hide1.seq
+[sensorfiles]
+KASPAR_leftarm.ini /icub/skin/leftarm leftarm_thres.txt
+KASPAR_lefthand_bottom.ini /icub/skin/lefthand_bottom lefthand_bottom_thres.txt
+KASPAR_lefthand_top.ini /icub/skin/lefthand_top righthand_top_thres.txt
+KASPAR_rightarm.ini /icub/skin/rightarm rightarm_thres.txt
+KASPAR_righthand_bottom.ini /icub/skin/righthand_bottom righthand_bottom_thres.txt
+KASPAR_righthand_top.ini /icub/skin/righthand_top lefthand_top_thres.txt
+KASPAR_cheeks.ini /icub/skin/cheeks cheeks_thres.txt
+KASPAR_leftfoot.ini /icub/skin/leftfoot leftfoot_thres.txt
+KASPAR_rightfoot.ini /icub/skin/rightfoot rightfoot_thres.txt
+KASPAR_torso.ini /icub/skin/torso torso_thres.txt

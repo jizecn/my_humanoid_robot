@@ -1,0 +1,13 @@
+default
+g3p3,3
+g3p2,2
+g3p1,1
+g2p1,0
+g4p2,5
+g4p1,4
+hard_poke,*
+hard_touch,+
+g2p3,.
+g2p2,000
+light_poke,/
+light_touch,-

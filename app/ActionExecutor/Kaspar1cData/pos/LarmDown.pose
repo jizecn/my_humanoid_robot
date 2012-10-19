@@ -1,0 +1,11 @@
+LarmDown
+9
+HEAD_ROT,534,100,false
+HEAD_VERT,0,100,false
+HEAD_TLT,475,100,false
+ARM_L_1,650,100,false
+ARM_L_2,620,100,false
+ARM_L_3,545,100,false
+ARM_L_4,500,100,false
+MOUTH_OPEN,500,100,false
+MOUTH_SMILE,500,100,false

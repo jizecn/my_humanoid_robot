@@ -1,0 +1,11 @@
+tickR
+8
+Res,Res.pose,0
+Eye Open,Eye Open.pose,300
+Eye Shut,Eye Shut.pose,300
+MouthClose,MouthClose.pose,300
+Eye Open,Eye Open.pose,300
+MouthOpen,MouthOpen.pose,200
+Eye Shut,Eye Shut.pose,200
+Eye Open,Eye Open.pose,0
+nice_tickles me.wav

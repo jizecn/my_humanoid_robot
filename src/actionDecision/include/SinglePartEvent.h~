@@ -1,0 +1,150 @@
+#ifndef __SINGLE_PART_EVENT_H__
+#define __SINGLE_PART_EVENT_H__
+
+#include <string>
+#include <iostream>
+#include <yarp/os/Property.h>
+
+class SinglePartEvent
+{
+public:
+
+	SinglePartEvent()
+	{
+		this->partName = "";
+		this->subPartName = "";
+		this->strength = "";
+		this->touchType = "";
+	}
+
+	SinglePartEvent(yarp::os::Property &cfg)
+	{
+		this->config = cfg;
+		this->partName = "";
+		this->subPartName = "";
+		this->strength = "";
+		this->touchType = "";
+	}
+
+	bool init(yarp::os::Property &cfg)
+	{
+		this->config = cfg;
+		return init();
+	}
+
+	bool init()
+	{
+		yarp::os::Value tempValue = config.find("PARTNAME");
+		std::cout << "-----> init SinglePartEvent" << std::endl;
+		if(tempValue.isNull())
+		{
+			std::cout << "Sensorpart is NULL" << std::endl;
+			return false;
+		}
+		else
+		{
+			std::cout <<"sensor part ----> " << tempValue.asString().c_str() << std::endl;
+			this->partName = tempValue.asString().c_str();
+		}
+
+		yarp::os::Value tempValue1 = config.find("TYPE");
+		if(tempValue1.isNull())
+		{
+			std::cerr << "ERROR: No touchType information avaiable." << std::endl;
+			return false;
+		}
+		else
+		{
+			std::cout << "touch type ---->" << tempValue1.asString().c_str() << std::endl;
+
+			this->touchType = tempValue1.asString().c_str();
+
+		}
+
+		yarp::os::Value tempValue2 = config.find("STRENGTH");
+		if(tempValue2.isNull())
+		{
+			// less critical in this case
+			std::cout << "WARNING: No strength information avaiable" << std::endl;
+			//return false;
+		}
+		else
+		{
+			std::cout << "strength ---->" << tempValue2.asString().c_str() << std::endl;
+			this->strength = tempValue2.asString().c_str();
+		}
+		return true;
+	}
+
+	void setPartName(std::string partname)
+	{
+		this->partName = partname;
+	}
+
+	const std::string getPartName() const
+	{
+		return this->partName;
+	}
+
+	void setSubPartName(std::string subPartName)
+	{
+		this->subPartName = subPartName;
+	}
+
+	const std::string getSubPartName() const
+	{
+		// not used at the moment
+		return this->subPartName; 
+	}
+
+	void setTouchType(std::string touchType)
+	{
+		this->touchType = touchType;
+	}
+
+	const std::string getTouchType() const
+	{
+		return this->touchType;
+	}
+
+	void setStrength(std::string strength)
+	{
+		this->strength = strength;
+	}
+
+	const std::string getStrength() const
+	{
+		// light, hard, normal etc.. 
+		return this->strength;
+	}
+
+	const std::string toString() const
+	{
+		std::string ret = this->partName + "  " + this->subPartName + "  " + this->touchType + "  " + this->strength;
+		//cout << ret;
+		return ret;
+	}
+
+
+	bool compareWith(const SinglePartEvent &spe)
+	{
+		// not compare strength and subpartname here. 
+		if(this->touchType == spe.getTouchType() && this->partName == spe.getPartName())
+		{
+			// std::cout << " two events are identical" << std::endl;
+			return true;
+		}
+		//	  std::cout << " two events are NOT identical" << std::endl;
+		return false;
+	}
+
+private:
+	yarp::os::Property config;
+	std::string partName;
+	std::string subPartName; // reserved for future.. e.g. palm is subpart of hand. left cheek is part of cheeks
+	std::string touchType;
+	std::string strength;
+};
+
+#endif // __SINGLE_PART_EVENT_H__
+

@@ -1,0 +1,15 @@
+Wave 1
+13
+HEAD_ROT,520,100,false
+HEAD_VERT,270,100,false
+HEAD_TLT,510,100,false
+ARM_L_1,830,100,false
+ARM_L_2,510,100,false
+ARM_L_3,310,100,false
+ARM_L_4,840,100,false
+ARM_R_1,660,100,false
+ARM_R_2,620,100,false
+ARM_R_3,530,100,false
+ARM_R_4,640,100,false
+MOUTH_OPEN,320,100,false
+MOUTH_SMILE,620,100,false

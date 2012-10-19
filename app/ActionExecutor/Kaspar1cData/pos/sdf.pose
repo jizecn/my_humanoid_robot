@@ -1,0 +1,15 @@
+sdf
+13
+HEAD_ROT,534,100,false
+HEAD_VERT,0,100,false
+HEAD_TLT,475,100,false
+ARM_L_1,650,100,false
+ARM_L_2,700,100,false
+ARM_L_3,545,100,false
+ARM_L_4,500,100,false
+ARM_R_1,505,100,false
+ARM_R_2,505,100,false
+ARM_R_3,400,100,false
+ARM_R_4,505,100,false
+MOUTH_OPEN,500,100,false
+MOUTH_SMILE,500,100,false

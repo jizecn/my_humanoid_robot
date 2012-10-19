@@ -1,0 +1,6 @@
+eyes_left
+4
+head left,head left.pose,300
+eyes_left,eyes_left.pose,900
+Eye Shut,Eye Shut.pose,300
+Eye Open,Eye Open.pose,0

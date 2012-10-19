@@ -1,0 +1,44 @@
+related and coherent events:
+
+
+poke -> contineous poke   --> touch
+         -> tapping with finger
+
+touch -> tap
+          -> holding touch
+
+----------Corresponding Actions-----------
+
+e.g. 
+look at touch -> laugh
+                      -> set compliant & smile & say hello (at beginning) or wave the other hand 
+
+
+----------------------------------
+Continuous events:
+
+from TactilePreprocessing:
+store:
+history data, and static events: 
+[data vector](1,2,....t),
+and 
+poke, touch, touch, touch, touch, touch,etc.
+  |
+  |
+analysis and send:
+poke, touch, touch, hold, hold, hold, hold, etc.
+
+
+------In ActionDecision--------
+it receives: 
+poke,
+touch,
+hold, 
+hold, 
+etc.
+
+
+------Action Definition-------------------------
+
+left-arm up, <together?> laugh, <cancellable by?> ouch, it hurts (stay or back to position); it tickles me (stay or back to position);
+
